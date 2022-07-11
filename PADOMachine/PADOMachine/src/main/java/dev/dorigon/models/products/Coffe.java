@@ -1,6 +1,6 @@
 package dev.dorigon.models.products;
 
-public class Coffe {
+public class Coffe implements HotDrink{
 
     private int  quantity = 3;
     private int temperature = 3;
@@ -9,7 +9,7 @@ public class Coffe {
 
     @Override
     public String toString() {
-        return "{" +
+        return "COFFE {" +
                 "quantity=" + quantity +
                 ", temperature=" + temperature +
                 ", sugar=" + sugar +

@@ -1,10 +1,12 @@
 package dev.dorigon.models.machines;
 
 import dev.dorigon.models.products.Coffe;
+import dev.dorigon.models.products.HotDrink;
 
-public class CoffeMachine {
+public class CoffeMachine implements HotDrinkMachine{
 
-    public Coffe makeCoffe(){
+    @Override
+    public HotDrink makeDrink() {
         return new Coffe();
-    };
+    }
 }
