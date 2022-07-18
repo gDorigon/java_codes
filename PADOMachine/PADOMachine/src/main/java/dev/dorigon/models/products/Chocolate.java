@@ -1,10 +1,12 @@
 package dev.dorigon.models.products;
-import dev.dorigon.models.products.HotDrink;
+
+import dev.dorigon.configurations.CONSTANTS;
+
 
 public class Chocolate extends HotDrink {
 
     public Chocolate() {
-        super(5, 3, 1);
+        super(CONSTANTS.CHOCOLATE_DEFAULT);
     }
 }
 

@@ -7,6 +7,7 @@ public class CoffeMachine implements HotDrinkMachine{
 
     @Override
     public HotDrink makeDrink() {
+
         return new Coffe();
     }
 }

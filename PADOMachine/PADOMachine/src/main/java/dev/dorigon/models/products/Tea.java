@@ -1,20 +1,12 @@
 package dev.dorigon.models.products;
 
-public class Tea implements HotDrink{
+import dev.dorigon.configurations.CONSTANTS;
 
-    private int  quantity = 3;
-    private int temperature = 3;
-    private int sugar = 3;
+public class Tea extends HotDrink{
 
+    public Tea() {
 
-    public Tea() {};
+        super(CONSTANTS.TEA_DEFAULT);
+    };
 
-    @Override
-    public String toString() {
-        return "TEA {" +
-                "quantity=" + quantity +
-                ", temperature=" + temperature +
-                ", sugar=" + sugar +
-                '}';
-    }
 }
